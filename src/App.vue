@@ -1,26 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<VueTab/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import VueTab from "@/components/VueTab.vue";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    VueTab,
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+@import "stylesheet/style.scss";
 </style>

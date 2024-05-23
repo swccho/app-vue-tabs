@@ -1,0 +1,67 @@
+.main-body {
+  .hero-container {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 0 15px;
+
+    @media screen and (max-width: 991px) {
+      max-width: 767px;
+    }
+
+    .hero-title {
+      text-align: center;
+      margin: 40px;
+    }
+
+    .nav-tabs {
+      display: inline-flex;
+      justify-content: center;
+      background: var(--white);
+      box-shadow: 0 2px 4px var(--black-opacity-10);
+      border-radius: 8px;
+      padding: 10px 20px;
+      position: relative;
+
+      .nav-tab {
+        margin: 0 10px;
+        padding: 10px 20px;
+        cursor: pointer;
+        color: var(--text-var-1);
+        transition: color 0.3s;
+        @media screen and (max-width: 991px) {
+          margin: 0;
+        }
+
+        &:hover {
+          color: var(--blue-var-1);
+        }
+
+        &.active {
+          color: var(--blue-var-1);
+          font-weight: 600;
+        }
+      }
+
+      .underline {
+        position: absolute;
+        bottom: 0;
+        height: 2px;
+        background: #007BFF;
+        transition: left 0.3s ease, width 0.3s ease;
+      }
+    }
+
+    .tab-content {
+      display: none;
+      padding: 100px 20px 20px;
+      margin-top: 20px;
+      width: 100%;
+
+      text-align: center;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+}
